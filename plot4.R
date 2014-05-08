@@ -1,5 +1,7 @@
-#source("load_data.R")
+source("load_data.R")
+
 png("plot4.png",height=480,width=480)
+
 par(mfrow=c(2,2))
 plot(consumption_subset$datetime,consumption_subset$Global_active_power,  type="l",xlab="",ylab="Global Active Power")
 
